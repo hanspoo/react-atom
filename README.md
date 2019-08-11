@@ -5,7 +5,7 @@ A good IDE is important for any programmer, and one of the most difficult aspect
 
 Our working environment is based on free software, this tutorial is for Ubuntu 18.04, but the instructions should work with minimal modifications in other linux distros (i.e. Use yum instead apt for red hat based distros).
 
-##1.- Nodejs installation
+## 1.- Nodejs installation
 The React development environment requires nodejs, which is a javascript local runtime environment. In production nodejs is not necessary since when building the react project for production with "yarn build", a standard, static, self contained html project is generated, without any dependencies to nodejs. The next instructions will refresh your repo configuration, install the curl web client, and finally the nodejs 10.
 
 ```
@@ -27,7 +27,7 @@ To manage packages in node projects, the "npm" command comes preinstalled, in re
 ```
 sudo npm i -g yarn
 ```
-##2.- React installation
+## 2.- React installation
 Now it's time to install the ReactJS project creation script: create-react-app, we'll use sudo to install it globally, available for the entire system, we'll use yarn to install it.
 sudo yarn global add create-react-app
 
@@ -41,7 +41,7 @@ If all goes well you will see messages with instructions to start the project.
 
 With this we can create react projects, but without a good IDE we'll not be able to make much progress.
 
-##3.- Atom installation
+## 3.- Atom installation
 We will download atom first with curl:
 
 ```
@@ -89,7 +89,7 @@ cat <<EOF>>$HOME/.atom/config.cson
 EOF
 ```
 
-##4.- Eslint configuration
+## 4.- Eslint configuration
 To convert Atom into a real IDE, we need to configure code validation as you type. The javascript validator is called eslint (Ecma Script Lint). We'll install it globally with:
 
 ```
