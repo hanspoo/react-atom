@@ -1,4 +1,5 @@
 # React + Atom IDE
+
 React is a new software development paradigm, it has been called "the new jQuery", can be applied in different environments and devices. The main environment of course is the web, the web version is referred as ReactJS, other important environment is native mobile development called react-native.
 
 A good IDE is important for any programmer, and one of the most difficult aspects of facing a new technology is to start, so this instructions will let you with a productive react working environment: you will be able to create react projects in a validated javascript programming environment using the Atom editor as your IDE.
@@ -6,13 +7,14 @@ A good IDE is important for any programmer, and one of the most difficult aspect
 Our working environment is based on free software, this tutorial is for Ubuntu 18.04, but the instructions should work with minimal modifications in other linux distros (i.e. Use yum instead apt for red hat based distros).
 
 ## 1.- Nodejs installation
+
 The React development environment requires nodejs, which is a javascript local runtime environment. In production nodejs is not necessary since when building the react project for production with "yarn build", a standard, static, self contained html project is generated, without any dependencies to nodejs. The next instructions will refresh your repo configuration, install the curl web client, and finally the nodejs 10.
 
 ```
-sudo apt-update
-sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt install nodejs
+sudo apt-update  
+sudo apt install curl  
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -  
+sudo apt install nodejs  
 ```
 
 You can verify that it has been installed by executing the node command requesting the version number:
@@ -24,10 +26,13 @@ node -v
 Credits to: https://joshtronic.com/2018/05/08/how-to-install-nodejs-10-on-ubuntu-1804-lts/
 
 To manage packages in node projects, the "npm" command comes preinstalled, in react it's common the use yarn that does basically the same as npm, we will install it globally in our system with the following command:
+
 ```
 sudo npm i -g yarn
 ```
+
 ## 2.- React installation
+
 Now it's time to install the ReactJS project creation script: create-react-app, we'll use sudo to install it globally, available for the entire system, we'll use yarn to install it.
 sudo yarn global add create-react-app
 
@@ -42,6 +47,7 @@ If all goes well you will see messages with instructions to start the project.
 With this we can create react projects, but without a good IDE we'll not be able to make much progress.
 
 ## 3.- Atom installation
+
 We will download atom first with curl:
 
 ```
@@ -90,6 +96,7 @@ EOF
 ```
 
 ## 4.- Eslint configuration
+
 To convert Atom into a real IDE, we need to configure code validation as you type. The javascript validator is called eslint (Ecma Script Lint). We'll install it globally with:
 
 ```
@@ -137,7 +144,8 @@ cat <<EOF>.eslintrc.json
 EOF
 ```
 
-##5.- Congratulations
+## 5.- Congratulations
+
 Your React IDE is ready, let's test it:
 
 ```
