@@ -1,0 +1,15 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "atom-sublime-monokai-syntax"
+    ]
+  editor:
+    fontSize: 15
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    useEslint: true
+  welcome:
+    showOnStartup: false
