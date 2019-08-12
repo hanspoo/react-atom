@@ -105,7 +105,7 @@ If you have trouble to create the file with cat and the here document, the file 
 To convert Atom into a real IDE, we need to configure code validation as you type. The javascript validator is called eslint (Ecma Script Lint). We'll install it globally with:
 
 ```
-npm i -g eslint
+sudo npm i -g eslint
 ```
 
 Then it must be configured in each project. Let's create a react project called test-lint in a temporary folder.
