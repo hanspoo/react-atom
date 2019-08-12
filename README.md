@@ -76,7 +76,7 @@ From the previous atom packages, code validator: linter and code formatting: pre
 Using cat with a Here Document, we create a basic atom configuration file config.cson:
 
 ```
-cat <<EOF>>$HOME/.atom/config.cson
+cat <<EOF>$HOME/.atom/config.cson
 "*":
   core:
     telemetryConsent: "limited"
