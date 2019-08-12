@@ -51,19 +51,19 @@ Ok, we can create and run react projects, but without a good IDE we are not goin
 
 ## 3.- Atom installation
 
-We will download atom first with curl:
-
-```
-curl https://atom-installer.github.com/v1.39.1/atom-amd64.deb - output atom.deb
-```
-
 Before install atom we'll need to install atom 1.39.1 dependencies for Ubuntu 18.04.
 
 ```
 sudo apt install -y git libgconf-2-4 libgconf2-4 libgtk-3-0 libnotify4 libxtst6 libnss3 gvfs-bin xdg-utils libx11-xcb1 libxss1 libasound2 libxkbfile1 policykit-1
 ```
 
-Then install atom in the system:
+We will download atom first with curl using -L parameter to allow it to follow redirects. The url is debian specific so it must be modified in red-hat based distros:
+
+```
+curl -L  https://atom.io/download/deb --output atom.deb
+```
+
+Then install atom in the system, a low level installation with the base command dpkg:
 
 ```
 sudo dpkg -i atom.deb
