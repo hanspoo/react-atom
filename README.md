@@ -4,7 +4,7 @@ React is a new software development paradigm, it has been called "the new jQuery
 
 A good IDE is important for any programmer, and one of the most difficult aspects of facing a new technology is to start, so this instructions will let you with a productive react working environment: you will be able to create react projects in a validated javascript programming environment using the Atom editor as your IDE.
 
-Our working environment is based on free software, this tutorial is for Ubuntu 18.04, but the instructions should work with minimal modifications in other linux distros (i.e. Use yum instead apt for red hat based distros).
+This tutorial is for Ubuntu 18.04, but the instructions should work with minimal modifications in other linux distros (i.e. Use yum instead apt for red hat based distros).
 
 ## 1.- Nodejs installation
 
