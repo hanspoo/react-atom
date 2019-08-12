@@ -113,7 +113,6 @@ Then it must be configured in each project. Let's create a react project called 
 ```
 cd /tmp
 create-react-app test-lint
-Get into it:
 cd test-lint
 ```
 
