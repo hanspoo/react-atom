@@ -125,18 +125,18 @@ eslint  --init
 
 When asked, answer as indicated here:
 
-? How would you like to use ESLint? To check syntax, find problems, and enforce code style
-? What type of modules does your project use? JavaScript modules (import/export)
-? Which framework does your project use? React
-? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)Browser
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style  
+? What type of modules does your project use? JavaScript modules (import/export)  
+? Which framework does your project use? React  
+? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)Browser  
 
-? How would you like to define a style for your project? Use a popular style guide
-? Which style guide do you want to follow? Airbnb (https://github.com/airbnb/javascript)
-? What format do you want your config file to be in? JSON
+? How would you like to define a style for your project? Use a popular style guide  
+? Which style guide do you want to follow? Airbnb (https://github.com/airbnb/javascript)  
+? What format do you want your config file to be in? JSON  
 
-If it asks something else, just say "Yes"
+If it asks something else, just say "Yes"  
 
-Let's override the basic eslint json configuration .eslintrc.json  file for react:
+Let's override the basic eslint json configuration .eslintrc.json  file for react:  
 
 ```
 cat <<EOF>.eslintrc.json 
@@ -160,6 +160,7 @@ EOF
 Your React IDE is ready, let's test it:
 
 ```
+cd /tmp
 create-react-app atom-test
 cd atom-test
 atom .
