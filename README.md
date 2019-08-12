@@ -11,10 +11,10 @@ This tutorial is for Ubuntu 18.04, but the instructions should work with minimal
 The React development environment requires nodejs, which is a javascript local runtime environment. In production nodejs is not necessary since when building the react project for production with "yarn build", a standard, static, self contained html project is generated, without any dependencies to nodejs. The next instructions will refresh your repo configuration, install the curl web client, and finally the nodejs 10.
 
 ```
-sudo apt-update  
-sudo apt install curl  
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -  
-sudo apt install nodejs  
+sudo apt update
+sudo apt -y install curl
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt -y install nodejs
 ```
 
 You can verify that it has been installed by executing the node command requesting the version number:
@@ -34,7 +34,10 @@ sudo npm i -g yarn
 ## 2.- React installation
 
 Now it's time to install the ReactJS project creation script: create-react-app, we'll use sudo to install it globally, available for the entire system, we'll use yarn to install it.
+
+```
 sudo yarn global add create-react-app
+```
 
 You can verify that it has been installed correctly by creating a hello world project:
 
@@ -44,7 +47,7 @@ create-react-app hello-world
 
 If all goes well you will see messages with instructions to start the project.
 
-With this we can create react projects, but without a good IDE we'll not be able to make much progress.
+Ok, we can create and run react projects, but without a good IDE we are not going to make much progress.
 
 ## 3.- Atom installation
 
@@ -66,7 +69,7 @@ Then install atom in the system:
 sudo dpkg -i atom.deb
 ```
 
-Next we'll add some packages to empower atom for react development. Note that personal Atom configuration is kept on the .atom folder in the user account: $HOME/.atom. The next command is run without sudo.
+Next we'll add some packages to empower atom for react development. Note that personal Atom configuration is kept on the .atom folder in the user account: $HOME/.atom. The next command is run without sudo. The apm command stands for "atom package manager".
 
 ```
 apm install linter linter-eslint prettier-atom linter-ui-default atom-import-module atom-import-js atom-react-autocomplete autocomplete-modules click-a-path react-snippets intentions busy-signal atom-sublime-monokai-syntax
