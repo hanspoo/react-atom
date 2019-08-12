@@ -159,9 +159,6 @@ EOF
 Your React IDE is ready, let's test it:
 
 ```
-cd /tmp
-create-react-app atom-test
-cd atom-test
 atom .
 yarn start
 ```
