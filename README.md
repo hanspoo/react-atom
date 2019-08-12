@@ -57,7 +57,7 @@ curl https://atom-installer.github.com/v1.39.1/atom-amd64.deb - output atom.
 Before install atom we'll need to install atom 1.39.1 dependencies for Ubuntu 18.04.
 
 ```
-sudo apt install git libgconf-2–4 libgconf2–4 libgtk-3–0 libnotify4 libxtst6 libnss3 gvfs-bin xdg-utils libx11-xcb1 libxss1 libasound2 libxkbfile1 policykit-1
+sudo apt install -y git libgconf-2-4 libgconf2-4 libgtk-3-0 libnotify4 libxtst6 libnss3 gvfs-bin xdg-utils libx11-xcb1 libxss1 libasound2 libxkbfile1 policykit-1
 ```
 
 Then install atom in the system:
@@ -69,7 +69,7 @@ sudo dpkg -i atom.deb
 Next we'll add some packages to empower atom for react development. Note that personal Atom configuration is kept on the .atom folder in the user account: $HOME/.atom. The next command is run without sudo.
 
 ```
-apm install linter linter-eslint prettier-atom linter-ui-default atom-import-module atom-import-js atom-react-autocomplete autocomplete-modules click-a-path react-snippets intentions busy-signal atom-sublime-monokai- syntax
+apm install linter linter-eslint prettier-atom linter-ui-default atom-import-module atom-import-js atom-react-autocomplete autocomplete-modules click-a-path react-snippets intentions busy-signal atom-sublime-monokai-syntax
 ```
 
 From the previous atom packages, code validator: linter and code formatting: prettier, are the most important.
