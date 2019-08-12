@@ -72,10 +72,10 @@ sudo dpkg -i atom.deb
 Next we'll add some packages to empower atom for react development. Note that personal Atom configuration is kept on the .atom folder in the user account: $HOME/.atom. The next command is run without sudo. The apm command stands for "atom package manager".
 
 ```
-apm install linter linter-eslint prettier-atom linter-ui-default atom-import-module atom-import-js atom-react-autocomplete autocomplete-modules click-a-path react-snippets intentions busy-signal atom-sublime-monokai-syntax
+apm install linter linter-eslint prettier-atom linter-ui-default atom-import-module atom-react-autocomplete autocomplete-modules click-a-path react-snippets intentions busy-signal atom-sublime-monokai-syntax
 ```
 
-From the previous atom packages, code validator: linter and code formatting: prettier, are the most important.
+From the previous atom packages, the code validator: linter and the code formatter: prettier, are the most important.
 Using cat with a Here Document, we create a basic atom configuration file config.cson:
 
 ```
@@ -98,12 +98,14 @@ cat <<EOF>$HOME/.atom/config.cson
 EOF
 ```
 
+If you have trouble to create the file with cat and the here document, the file config.cson is available in the github repo referenced at the bottom of the page. In any case atom creates it if it doesn't exist. You can use atom preferences to manage it. 
+ 
 ## 4.- Eslint configuration
 
 To convert Atom into a real IDE, we need to configure code validation as you type. The javascript validator is called eslint (Ecma Script Lint). We'll install it globally with:
 
 ```
-yarn add global eslint
+npm i -g eslint
 ```
 
 Then it must be configured in each project. Let's create a react project called test-lint in a temporary folder.
@@ -122,10 +124,16 @@ eslint  --init
 ```
 
 When asked, answer as indicated here:
-? How would you like to configure ESLint? Use a popular style guide
+
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? JavaScript modules (import/export)
+? Which framework does your project use? React
+? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)Browser
+
+? How would you like to define a style for your project? Use a popular style guide
 ? Which style guide do you want to follow? Airbnb (https://github.com/airbnb/javascript)
-? Do you use React? Yes
 ? What format do you want your config file to be in? JSON
+
 If it asks something else, just say "Yes"
 
 Let's override the basic eslint json configuration .eslintrc.json  file for react:
