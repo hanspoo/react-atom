@@ -8,7 +8,7 @@ This tutorial is for Ubuntu 18.04, but the instructions should work with minimal
 
 ## 1.- Nodejs installation
 
-The React development environment requires nodejs, which is a javascript local runtime environment. In production nodejs is not necessary since when building the react project for production with "yarn build", a standard, static, self contained html project is generated, without any dependencies to nodejs. The next instructions will refresh your repo configuration, install the curl web client, and finally the nodejs 10.
+The React development environment requires nodejs, which is a javascript local runtime environment. In production nodejs is not necessary since when building the react project for production with "yarn build", a standard, static, self contained html project is generated, without any dependencies to nodejs. The next instructions will refresh your repo configuration, install the curl web client, and finally nodejs 10.
 
 ```
 sudo apt update
