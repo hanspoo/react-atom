@@ -156,7 +156,7 @@ EOF
 
 ## 5.- Congratulations
 
-Your React IDE is ready, remember you are in the project folder test-lint let's test it:
+Your React IDE is ready, remember you are in the project folder test-lint, let's test it:
 
 ```
 atom .
